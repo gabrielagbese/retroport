@@ -1,1 +1,87 @@
 @import 'breakpoints';
+
+html{
+    padding: 0;
+    margin: 0;
+    @include xs{
+        background-color: yellow;
+    };
+    @include md{
+        background-color:orange;
+    };
+}
+body{
+    padding: 0;
+    margin: 0;
+    @include xs{
+        max-height: 100vh;
+        position: fixed;    
+    };
+}
+.container{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    min-width: 100vw;
+    @include xs{
+        flex-direction: column;
+        overflow-y: hidden;
+    };
+    @include md{
+        flex-direction: row;
+        overflow-x: hidden;
+    };
+}
+
+.hero{
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    @include xs{
+        min-height: 40vh;
+        min-width: 100vw;
+    };
+    @include md{
+        min-height: 100vh;
+        min-width: 40vw;
+    };
+}
+
+.cards{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    @include xs{
+        flex-direction: column;
+    };
+    @include md{
+        flex-direction: row;
+    };
+}
+
+.card{
+    //border: thin solid red;
+    @include xs{
+        min-height: 20vh;
+        min-width: 100vw;
+    };
+    @include md{
+        min-height: 100vh;
+        min-width: 20vw;
+    };
+}
+
+.content{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    @include xs{
+        min-height: 80vh;
+        min-width: 100vw;
+    };
+    @include md{
+        min-height: 100vh;
+        min-width: 80vw;
+    };
+}

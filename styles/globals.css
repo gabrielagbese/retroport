@@ -1,1 +1,139 @@
-/* No CSS *//*# sourceMappingURL=globals.css.map */
+html {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0px) {
+  html {
+    background-color: yellow;
+  }
+}
+
+@media (min-width: 720px) {
+  html {
+    background-color: orange;
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0px) {
+  body {
+    max-height: 100vh;
+    position: fixed;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+@media (min-width: 0px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    overflow-y: hidden;
+  }
+}
+
+@media (min-width: 720px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow-x: hidden;
+  }
+}
+
+.hero {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+@media (min-width: 0px) {
+  .hero {
+    min-height: 40vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero {
+    min-height: 100vh;
+    min-width: 40vw;
+  }
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+@media (min-width: 0px) {
+  .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (min-width: 720px) {
+  .cards {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 0px) {
+  .card {
+    min-height: 20vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .card {
+    min-height: 100vh;
+    min-width: 20vw;
+  }
+}
+
+.content {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+@media (min-width: 0px) {
+  .content {
+    min-height: 80vh;
+    min-width: 100vw;
+  }
+}
+
+@media (min-width: 720px) {
+  .content {
+    min-height: 100vh;
+    min-width: 80vw;
+  }
+}
+/*# sourceMappingURL=globals.css.map */
